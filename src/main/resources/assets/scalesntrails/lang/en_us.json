@@ -1,7 +1,11 @@
 {
   "item.scalesntrails.leaf_gecko_spawn_egg" : "Leaf Tailed Gecko Spawn Egg",
-  "item.scalesntrails.vine_snake_egg" : "Vine Snake Spawn Egg",
+  "item.scalesntrails.vine_snake_spawn_egg" : "Vine Snake Spawn Egg",
+  "item.scalesntrails.basalisk_lizard_spawn_egg" : "Basalisk Lizard Spawn Egg",
+
+  "creativetab.scalesntrails_tab" : "Scales And Trails",
 
   "entity.scalesntrails.leaf_tailed_gecko" : "Leaf Tailed Gecko",
-  "entity.scalesntrails.vine_snake" : "Vine Snake"
+  "entity.scalesntrails.vine_snake" : "Vine Snake",
+  "entity.scalesntrails.basalisk_lizard" : "Basalisk Lizard"
 }

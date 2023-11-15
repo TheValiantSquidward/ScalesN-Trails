@@ -13,19 +13,12 @@ import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.world.entity.ai.goal.PanicGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.animal.Animal;
-import net.minecraft.world.entity.animal.Bucketable;
-import net.minecraft.world.entity.monster.CaveSpider;
-import net.minecraft.world.entity.monster.Silverfish;
-import net.minecraft.world.entity.monster.Spider;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
-import net.thevaliantsquidward.scalesntrails.entity.ModEntities;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.GeoAnimatable;
@@ -34,14 +27,12 @@ import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInst
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
 
-import javax.annotation.Nonnull;
-
-public class EntityVineSnake extends Animal implements GeoEntity {
+public class VineSnakeEntity extends Animal implements GeoEntity {
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
-    public EntityVineSnake(EntityType<? extends Animal> pEntityType, Level pLevel) {
+    public VineSnakeEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
     }
-    private static final EntityDataAccessor<Integer> VARIANT = SynchedEntityData.defineId(EntityVineSnake.class, EntityDataSerializers.INT);
+    private static final EntityDataAccessor<Integer> VARIANT = SynchedEntityData.defineId(VineSnakeEntity.class, EntityDataSerializers.INT);
 
 
     public static AttributeSupplier setAttributes() {
@@ -71,17 +62,6 @@ public class EntityVineSnake extends Animal implements GeoEntity {
         super.defineSynchedData();
         this.entityData.define(VARIANT, 0);
     }
-
-//    @Override
-//    @Nonnull
-//    public ItemStack getBucketItemStack() {
-//        ItemStack stack = new ItemStack(ModItems.GOBY_BUCKET.get());
-//        if (this.hasCustomName()) {
-//            stack.setHoverName(this.getCustomName());
-//        }
-//        return stack;
-//    }
-
 
 
 

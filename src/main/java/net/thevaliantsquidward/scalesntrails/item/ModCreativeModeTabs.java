@@ -15,15 +15,15 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> RAINBOW_REEF_TAB = CREATIVE_MODE_TABS.register("rainbow_reef_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.LEAF_GECKO_SPAWN_EGG.get()))
-                    .title(Component.translatable("creativetab.rainbow_reef_tab"))
+                    .title(Component.translatable("creativetab.scalesntrails_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
                         //Major order:
                         //
 
-
                         pOutput.accept(ModItems.LEAF_GECKO_SPAWN_EGG.get());
                         pOutput.accept(ModItems.VINE_SNAKE_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.BASALISK_LIZARD_SPAWN_EGG.get());
 
                              })
                     .build());

@@ -1,6 +1,5 @@
 package net.thevaliantsquidward.scalesntrails.entity.custom;
 
-import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntityType;
@@ -24,11 +23,10 @@ import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache
 import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
-import net.minecraft.world.level.Level;
 
-public class EntityLeafTailedGecko extends Animal implements GeoEntity {
+public class LeafTailedGeckoEntity extends Animal implements GeoEntity {
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
-    public EntityLeafTailedGecko(EntityType<? extends Animal> pEntityType, Level pLevel) {
+    public LeafTailedGeckoEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
     }
 

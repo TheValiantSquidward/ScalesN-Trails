@@ -14,6 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.thevaliantsquidward.scalesntrails.block.ModBlocks;
 import net.thevaliantsquidward.scalesntrails.entity.ModEntities;
+import net.thevaliantsquidward.scalesntrails.entity.client.BasaliskRenderer;
 import net.thevaliantsquidward.scalesntrails.entity.client.LeafTailedGeckoRenderer;
 import net.thevaliantsquidward.scalesntrails.entity.client.VineSnakeRenderer;
 import net.thevaliantsquidward.scalesntrails.item.ModCreativeModeTabs;
@@ -71,6 +72,8 @@ public class ScalesNTrails
                     (ModEntities.LEAF_TAILED_GECKO.get(), LeafTailedGeckoRenderer:: new);
             EntityRenderers.register
                     (ModEntities.VINE_SNAKE.get(), VineSnakeRenderer:: new);
+            EntityRenderers.register
+                    (ModEntities.BASALISK_LIZARD.get(), BasaliskRenderer:: new);
         }
     }
 }
