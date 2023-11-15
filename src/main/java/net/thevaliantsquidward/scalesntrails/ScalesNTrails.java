@@ -19,7 +19,9 @@ import net.thevaliantsquidward.scalesntrails.entity.client.LeafTailedGeckoRender
 import net.thevaliantsquidward.scalesntrails.entity.client.VineSnakeRenderer;
 import net.thevaliantsquidward.scalesntrails.item.ModCreativeModeTabs;
 import net.thevaliantsquidward.scalesntrails.item.ModItems;
+import net.thevaliantsquidward.scalesntrails.painting.ModPaintings;
 import org.slf4j.Logger;
+import software.bernie.geckolib.GeckoLib;
 
 @Mod(ScalesNTrails.MOD_ID)
 public class ScalesNTrails
@@ -36,6 +38,8 @@ public class ScalesNTrails
 
         ModItems.register(modEventBus);
 
+        ModPaintings.register(modEventBus);
+
         ModCreativeModeTabs.register(modEventBus);
 
         ModBlocks.register(modEventBus);
@@ -43,6 +47,7 @@ public class ScalesNTrails
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
 
+        GeckoLib.initialize();
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
