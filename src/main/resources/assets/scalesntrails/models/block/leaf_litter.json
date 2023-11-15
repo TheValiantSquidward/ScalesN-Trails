@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "texture": "scalesntrails:block/leaf_litter.png"
+  },
+  "render_type": "cutout"
+}

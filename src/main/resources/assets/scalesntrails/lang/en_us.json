@@ -1,0 +1,7 @@
+{
+  "item.scalesntrails.leaf_gecko_spawn_egg" : "Leaf Tailed Gecko Spawn Egg",
+  "item.scalesntrails.vine_snake_egg" : "Vine Snake Spawn Egg",
+
+  "entity.scalesntrails.leaf_tailed_gecko" : "Leaf Tailed Gecko",
+  "entity.scalesntrails.vine_snake" : "Vine Snake"
+}
