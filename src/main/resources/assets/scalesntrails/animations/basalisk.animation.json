@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.model.da_skrunkle_run": {
+		"animation.model.new": {
 			"loop": true,
 			"animation_length": 0.5,
 			"bones": {
@@ -92,7 +92,7 @@
 				}
 			}
 		},
-		"animation.model.walk": {
+		"animation.model.new2": {
 			"loop": true,
 			"animation_length": 1,
 			"bones": {
@@ -193,6 +193,35 @@
 					},
 					"position": {
 						"vector": [0, "Math.cos((query.anim_time - 0.0) * 360) * -0.2", 0]
+					}
+				}
+			}
+		},
+		"animation.model.new3": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"bone7": {
+					"rotation": {
+						"vector": [0, "Math.cos((query.anim_time - 0.0) * 360) * 2", "0+Math.sin((query.anim_time - 0.0) * 360) * 2"]
+					}
+				},
+				"bone": {
+					"rotation": {
+						"vector": ["-17.5+math.cos((query.anim_time - 0.4)* 360)*0.5", 0, "0+math.cos((query.anim_time - 0.4)* 360)*2"]
+					}
+				},
+				"bone13": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"bone6": {
+					"position": {
+						"vector": [0, "Math.cos((query.anim_time - 0.0) * 360) * 0.1", 0]
 					}
 				}
 			}

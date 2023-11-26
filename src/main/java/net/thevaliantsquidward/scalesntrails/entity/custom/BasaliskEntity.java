@@ -53,10 +53,10 @@ public class BasaliskEntity extends Animal implements GeoEntity {
 
     private <T extends GeoAnimatable> PlayState predicate(AnimationState<GeoAnimatable> geoAnimatableAnimationState) {
         if(geoAnimatableAnimationState.isMoving()) {
-            geoAnimatableAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.model.walk", Animation.LoopType.LOOP));
+            geoAnimatableAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.model.new2", Animation.LoopType.LOOP));
             return PlayState.CONTINUE;
         }
-        geoAnimatableAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.model.rust_needs_to_make_an_idle_still", Animation.LoopType.LOOP));
+        geoAnimatableAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.model.new3", Animation.LoopType.LOOP));
         return PlayState.CONTINUE;
     }
 

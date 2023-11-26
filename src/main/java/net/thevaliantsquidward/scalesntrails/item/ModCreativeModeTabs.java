@@ -25,6 +25,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.VINE_SNAKE_SPAWN_EGG.get());
                         pOutput.accept(ModItems.BASALISK_LIZARD_SPAWN_EGG.get());
 
+                        pOutput.accept(ModItems.BASALISK_LEG.get());
+
                              })
                     .build());
 
